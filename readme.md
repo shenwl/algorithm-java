@@ -43,3 +43,11 @@ mvn clean test
 - Dynamic Programming
 - Binary Search
 - Graph
+
+## leetcode 练习
+#### Array & Linked List
+1. 206: reverse-linked-list
+2. 24: swap-nodes-in-pairs
+3. 141: linked-list-cycle
+4. 142: linked-list-cycle-ii
+5. 25: reverse-nodes-in-k-group
