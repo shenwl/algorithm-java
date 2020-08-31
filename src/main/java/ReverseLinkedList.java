@@ -13,7 +13,6 @@ public class ReverseLinkedList {
 
         p.next = null;
 
-
         while(pNext != null) {
             ListNode tmp = pNext.next;
             pNext.next = p;
