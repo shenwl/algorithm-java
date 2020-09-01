@@ -53,3 +53,4 @@ mvn clean test
 5. 25: reverse-nodes-in-k-group
 
 #### Stack & Queue
+1. 20: valid-parentheses
