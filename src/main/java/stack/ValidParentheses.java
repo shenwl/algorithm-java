@@ -1,7 +1,6 @@
 package stack;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -12,19 +11,21 @@ public class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
-        List<Character> left = List.of('(', '[', '{');
-        List<Character> right = List.of(')', ']', '}');
+        HashMap<Character, Character> map = new HashMap<>();
+        map.put('(', ')');
+        map.put('[', ']');
+        map.put('{', '}');
 
         for (int i = 0; i < s.length(); i++) {
             Character c = s.charAt(i);
 
-            if (left.contains(c)) {
+            if (map.containsKey(c)) {
                 stack.push(c);
-            } else if (right.contains(c)) {
+            } else if (map.containsValue(c)) {
                 if (stack.isEmpty()) return false;
 
                 Character leftBracket = stack.pop();
-                if (left.indexOf(leftBracket) != right.indexOf(c)) {
+                if (map.get(leftBracket) != c) {
                     return false;
                 }
             }
