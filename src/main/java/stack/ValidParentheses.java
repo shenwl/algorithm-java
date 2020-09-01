@@ -32,4 +32,15 @@ public class ValidParentheses {
 
         return stack.isEmpty();
     }
+
+    // 不用栈的解法, leetcode用例测试性能不如前一种
+    public boolean isValid2(String s) {
+        int len;
+        do{
+            len = s.length();
+            s = s.replace("()", "").replace("[]", "").replace("{}", "");
+        } while(len != s.length());
+
+        return s.length() == 0;
+    }
 }
