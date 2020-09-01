@@ -24,8 +24,7 @@ public class ValidParentheses {
             } else if (map.containsValue(c)) {
                 if (stack.isEmpty()) return false;
 
-                Character leftBracket = stack.pop();
-                if (map.get(leftBracket) != c) {
+                if (map.get(stack.pop()) != c) {
                     return false;
                 }
             }
