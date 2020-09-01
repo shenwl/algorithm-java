@@ -11,7 +11,7 @@ public class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
-        HashMap<Character, Character> map = new HashMap<>();
+        HashMap<Character, Character> map = new HashMap<>(3);
         map.put('(', ')');
         map.put('[', ']');
         map.put('{', '}');
@@ -21,7 +21,7 @@ public class ValidParentheses {
 
             if (map.containsKey(c)) {
                 stack.push(c);
-            } else if (map.containsValue(c)) {
+            } else {
                 if (stack.isEmpty()) return false;
 
                 if (map.get(stack.pop()) != c) {
@@ -29,9 +29,7 @@ public class ValidParentheses {
                 }
             }
         }
-        if (!stack.isEmpty()) {
-            return false;
-        }
-        return true;
+
+        return stack.isEmpty();
     }
 }
