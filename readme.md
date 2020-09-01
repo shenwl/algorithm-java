@@ -54,3 +54,5 @@ mvn clean test
 
 #### Stack & Queue
 1. 20: valid-parentheses
+2. 225: implement-stack-using-queues
+3. 232: implement-queue-using-stacks
