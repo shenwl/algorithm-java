@@ -56,3 +56,11 @@ mvn clean test
 1. 20: valid-parentheses
 2. 225: implement-stack-using-queues
 3. 232: implement-queue-using-stacks
+
+#### PriorityQueue
+- 正常入，按优先级出
+- 实现机制
+    * [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) (Binary, Binomial, Fibonacci)
+        - Fibonacci和Strict Fibonacci实现效率是最好的 [效率表](https://en.wikipedia.org/wiki/Heap_(data_structure))
+    * Binary Search Tree
+- 703: kth-largest-element-in-a-stream
