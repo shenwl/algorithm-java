@@ -65,3 +65,12 @@ mvn clean test
     * Binary Search Tree
 - 703: kth-largest-element-in-a-stream
 - 239: sliding-window-maximum (hard)
+
+#### Map & Set
+1. HashTable & Hash Function & Collisions
+
+2. Map vs Set
+
+3. HashMap, HashSet, TreeMap, TreeSet
+
+4. 242: valid-anagram

@@ -17,9 +17,11 @@ public class SlidingWindowMaximum {
 
         for(int i = 0; i < nums.length; i++) {
             int n = nums[i];
+            // 右移后左界删除
             if(i >= k && window.get(0) <= i - k) {
                 window.remove(0);
             }
+            // 删除左侧小于当前最右值的内容
             while(!window.isEmpty() && nums[window.get(window.size() - 1)] <= n) {
                 window.remove(window.size() - 1);
             }
