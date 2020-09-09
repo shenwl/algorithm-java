@@ -11,25 +11,24 @@ import java.util.HashMap;
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
-        HashMap<Character, Integer> map = new HashMap();
+        HashMap<Character, Integer> map1 = new HashMap();
+        HashMap<Character, Integer> map2 = new HashMap();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            Integer count = map.get(c);
-            map.put(c, count != null ? (count + 1) : 1);
+            Integer count = map1.get(c);
+            map1.put(c, count != null ? (count + 1) : 1);
         }
         for (int i = 0; i < t.length(); i++) {
             char c = t.charAt(i);
-            Integer count = map.get(c);
-            if (count == null || count == 0) {
-                return false;
-            }
-            map.put(c, count - 1);
+            Integer count = map2.get(c);
+            map2.put(c, count != null ? (count + 1) : 1);
         }
-        return true;
+        return map1.equals(map2);
     }
 
     public static void main(String[] args) {
         System.out.println("test isAnagram");
         System.out.println(new ValidAnagram().isAnagram("aacc", "ccac"));;
+        System.out.println(new ValidAnagram().isAnagram("aacc", "ccaa"));;
     }
 }
