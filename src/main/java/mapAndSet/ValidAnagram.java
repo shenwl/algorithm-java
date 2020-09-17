@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * leetcode 242
  * https://leetcode-cn.com/problems/valid-anagram/
- * 方法1：排序，把字符串的所有字母按字典序排序，之后比较排序好的单词是否一直。时间复杂度O(nlogn)
+ * 方法1：排序，把字符串的所有字母按字典序排序，之后比较排序好的单词是否一致。时间复杂度O(nlogn)
  * 方法2：Map统计每个字母出现的次数
  */
 public class ValidAnagram {
