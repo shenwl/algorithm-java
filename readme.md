@@ -74,3 +74,5 @@ mvn clean test
 3. HashMap, HashSet, TreeMap, TreeSet
 
 4. 242: valid-anagram
+
+5. 1: two-sum
