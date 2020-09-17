@@ -76,3 +76,7 @@ mvn clean test
 4. 242: valid-anagram
 
 5. 1: two-sum
+
+6. 15: 3sum
+
+6. 18: 4sum
