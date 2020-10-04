@@ -2,7 +2,7 @@
 
 ## 开始
 ```bash
-git clone xxxx
+git clone https://github.com/shenwl/algorithm-java.git
 cd algorithm-java
 
 mvn install
