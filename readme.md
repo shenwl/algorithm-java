@@ -92,3 +92,5 @@ mvn clean test
 
 3. leetcode
     - 98: validate-binary-search-tree
+    - 235: lowest-common-ancestor-of-a-binary-search-tree
+    - 236: lowest-common-ancestor-of-a-binary-tree
