@@ -46,16 +46,18 @@ mvn clean test
 
 ## leetcode 练习
 #### Array & Linked List
-1. 206: reverse-linked-list
-2. 24: swap-nodes-in-pairs
-3. 141: linked-list-cycle
-4. 142: linked-list-cycle-ii
-5. 25: reverse-nodes-in-k-group
+- leetcode
+    1. 206: reverse-linked-list
+    2. 24: swap-nodes-in-pairs
+    3. 141: linked-list-cycle
+    4. 142: linked-list-cycle-ii
+    5. 25: reverse-nodes-in-k-group
 
 #### Stack & Queue
-1. 20: valid-parentheses
-2. 225: implement-stack-using-queues
-3. 232: implement-queue-using-stacks
+- leetcode
+    1. 20: valid-parentheses
+    2. 225: implement-stack-using-queues
+    3. 232: implement-queue-using-stacks
 
 #### PriorityQueue
 - 正常入，按优先级出
@@ -63,8 +65,9 @@ mvn clean test
     * [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) (Binary, Binomial, Fibonacci)
         - Fibonacci和Strict Fibonacci实现效率是最好的 [效率表](https://en.wikipedia.org/wiki/Heap_(data_structure))
     * Binary Search Tree
-- 703: kth-largest-element-in-a-stream
-- 239: sliding-window-maximum (hard)
+- leetcode
+    * 703: kth-largest-element-in-a-stream
+    * 239: sliding-window-maximum (hard)
 
 #### Map & Set
 1. HashTable & Hash Function & Collisions
@@ -73,10 +76,19 @@ mvn clean test
 
 3. HashMap, HashSet, TreeMap, TreeSet
 
-4. 242: valid-anagram
+4. leetcode
+    - 242: valid-anagram
+    - 1: two-sum
+    - 15: 3sum
+    - 18: 4sum
 
-5. 1: two-sum
+#### Tree
+1. Tree, Binary Tree, BST
+    - 经典问题：分层打印二叉树
 
-6. 15: 3sum
+2. Graph
+    - 图论算法
+    - 最短路径问题
 
-6. 18: 4sum
+3. leetcode
+    - 98: validate-binary-search-tree
