@@ -3,6 +3,9 @@ package greedy;
 /**
  * leetcode 122
  * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
+ * 1. Greedy O(n)
+ * 2. DFS O(2 ^ n)
+ * 3. DP O(n)
  */
 public class BestTimeBuyAndSellStock {
     public int maxProfitGreedy(int[] prices) {
