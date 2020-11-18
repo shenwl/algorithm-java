@@ -138,3 +138,15 @@ mvn clean test
 3. leetcode
     - 50: powx-n    (mid)
     - 169: majority-element (easy)
+    
+#### 贪心算法 Greedy Algorithm
+1. 什么是贪心算法？
+    - 在对问题求解时，总是做出在当前看来最好的选择。
+
+2. 何种情况下用到贪心算法？
+    - 问题能够分成子问题解决，子问题的最优解能递推到最终问题的最优解(可遇不可求)
+    - 贪心和DP的不同在于，它对每个子问题的解决方案都做出选择，不能回退
+    - 动态规划会保存以前运算的结果，并根据以前的结果对当前进行选择，有回退功能
+    
+3. leetcode
+    - 122: best-time-to-buy-and-sell-stock-ii
