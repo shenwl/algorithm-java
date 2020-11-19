@@ -150,3 +150,56 @@ mvn clean test
     
 3. leetcode
     - 122: best-time-to-buy-and-sell-stock-ii
+    
+#### 广度优先搜索 Breadth-First-Search
+1. 在树 (图/状态集) 中寻找特定节点
+
+2. BFS：从根节点开始扩散，一层一层找
+    - 使用队列去存放节点 
+    ```python
+    def bfs(graph, start, end):
+        queue = []
+        queue.append([start])
+        # 树可以省略visited记录，但是图不行
+        visited.add(start) 
+   
+        while queue:
+            node = queue.pop()
+            visited.add(node)
+            # 处理逻辑
+            process(node)
+            # 扫描没访问过的后继节点
+            nodes = generate_related_nodes(node)
+            queue.push(nodes)
+        # ...
+    ```
+   
+#### 深度优先搜索 Deep-First-Search
+1. 一直往下走，到最后一个了再往回，递归写法：
+    ```python
+    visited = set()
+    def dfs(node, visited):
+        visited.add(node)
+        # process current node
+        # ...
+        for next_node in node.children():
+            if not next_node in visited:
+                dps(next_node, visited)
+    ```
+2. 非递归写法：
+    ```python
+    def dfs(tree):
+        if tree.root is None:
+            return p[]
+        visited, stack = [], [tree.root]
+        while stack:
+            node = stack.pop()
+            visited.add(node)
+            # 扫描没访问过的后继节点
+            nodes = generate_related_nodes(node)
+            stack.push(nodes)
+    ```
+
+3. BFS & DFS leetcode:
+    - 102: Binary Tree Level Order
+   
